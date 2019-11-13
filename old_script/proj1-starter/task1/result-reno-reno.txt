@@ -1,0 +1,1 @@
+tcp_1(B) \t cbr(B)\ttcp_2(B)\ttotal(B)\ttcp_ratio\tcbr_ratio\tAvg_BW(MBps)\t#packets\t#dropped\trate(%)\n

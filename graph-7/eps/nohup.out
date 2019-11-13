@@ -1,0 +1,226 @@
+[TimeStamp]-----main-----begin
+svn:  r057d814
+
+
+##################################################
+##############Foxit Reader Setup Log##############
+################################################## 
+
+
+[TimeStamp]-----CReader_AppEx::InitInstance()-----begin
+[TimeStamp]-----CMainWindow::Init()-----begin
+QObject::connect: No such slot CMainActions::Update_EditMenu()
+QObject::connect:  (sender name:   'mainwindow')
+QObject::connect: Use the SLOT or SIGNAL macro to connect CMainWindow::
+xdg-mime return the value that is  "FoxitReader.desktop
+"
+QLayout: Attempting to add QLayout "" to CMainToolbar "", which already has a layout
+QLayout: Attempting to add QLayout "" to CMainToolbar "", which already has a layout
+QLayout: Attempting to add QLayout "" to CMainToolbar "", which already has a layout
+CMainToolbar::AddSecondaryToolBar:  "View"
+CMainToolbar::AddSecondaryToolBar:  "Comment"
+CMainToolbar::AddSecondaryToolBar:  "Protect"
+CMainToolbar::AddSecondaryToolBar:  "Connect"
+CMainToolbar::AddSecondaryToolBar:  "Form"
+configpath:  "/home/daniar/.local/share/Foxit Software/Foxit Reader/Configuration/configtoolbar.xml"
+[TimeStamp]-----CReader_AppEx::LoadLibrarys()-----begin
+QMetaObject::connectSlotsByName: No matching signal for on_DescripEdit_editingFinished()
+[TimeStamp]-----CReader_AppEx::LoadLibrarys()-----end-----UsedTime: 48ms 
+QMetaObject::connectSlotsByName: No matching signal for on_TabToolButton_click()
+[need finish...] CRSA_Module::UpdateUserStampsdata() 
+
+wsPDFPath "/home/daniar/opt/foxitsoftware/foxitreader/stamps/en-US/Standard Stamps"
+wsPDFPath "/home/daniar/opt/foxitsoftware/foxitreader/stamps/en-US/Sign Here"
+wsPDFPath "/home/daniar/opt/foxitsoftware/foxitreader/stamps/en-US/Dynamic Stamps"
+[TimeStamp]-----CReader_AppEx::LoadPlugs()-----begin
+"Unknown error" 
+
+"Unknown error" 
+
+"Unknown error" 
+
+"Unknown error" 
+
+CInternetMgr::CInternetMgr();
+"Unknown error" 
+
+"Unknown error" 
+
+"Plugin verification data mismatch in '/home/daniar/opt/foxitsoftware/foxitreader/fxplugins/libfpcsdk.so'" 
+
+"Unknown error" 
+
+"Plugin verification data mismatch in '/home/daniar/opt/foxitsoftware/foxitreader/fxplugins/librms.so'" 
+
+"Plugin verification data mismatch in '/home/daniar/opt/foxitsoftware/foxitreader/fxplugins/librmsauth.so'" 
+
+"Plugin verification data mismatch in '/home/daniar/opt/foxitsoftware/foxitreader/fxplugins/librmsauthWebAuthDialog.so'" 
+
+"Plugin verification data mismatch in '/home/daniar/opt/foxitsoftware/foxitreader/fxplugins/librmscrypto.so'" 
+
+"Plugin verification data mismatch in '/home/daniar/opt/foxitsoftware/foxitreader/fxplugins/librpc.so'" 
+
+"Unknown error" 
+
+ConnectPDFService: Load DBPath: "/home/daniar/.local/share/Foxit Software/Foxit Reader/ConnectedPDF/ConnectPDFConfig.db"
+ConnectPDFTable tableExists
+"ConnectPDFService:  Open DBPath = /home/daniar/.local/share/Foxit Software/Foxit Reader/ConnectedPDF/ConnectPDFConfig.db Success"
+ConnectedPDFService: DocSharereviewTable tableExists
+ConnectedPDFService: ConnectedPDF_DRM_Table tableExists
+CloudReading plugin PIInit start:  QTime("04:38:12.173") 
+
+444444444444
+555555555555555
+66666666666666
+cloudlogin Plugin: Fpcsdk Load suess
+777777777777777777
+CThreadGetApi::run()  ----------------
+ implementation ====  "en-US"
+get cache value:  "{"api":{"cacheTime":"2019-11-11 22:00:13","cwsConfig":{"sizeX":650,"sizeY":500,"type":0,"url":""},"size":98,"url":{"fcp_ab_config":"https://cws.connectedpdf.com/cpdfapi/v1/server/ad-config","fcp_access_control":"https://cws.connectedpdf.com/permission-manage?docId=%s&access-token=%s&al=%s&cv=%s&an=%s&av=%s","fcp_access_homepage":"https://cws.connectedpdf.com/connected-pdf?docId=%s&access-token=%s&al=%s&cv=%s&an=%s&av=%s","fcp_access_related_people":"https://cws.connectedpdf.com/document/people?docId=%s&access-token=%s&al=%s&cv=%s&an=%s&av=%s","fcp_access_version_tree":"https://cws.connectedpdf.com/document/versions?docId=%s&access-token=%s&al=%s&cv=%s&an=%s&av=%s","fcp_access_view":"https://cws.connectedpdf.com/permission-manage/access-view?docId=%s&access-token=%s&al=%s&cv=%s&an=%s&av=%s","fcp_access_view_request_more":"https://cws.connectedpdf.com/permission-manage/access-view?docId=%s&access-token=%s&edit=1&al=%s&cv=%s&an=%s&av=%s","fcp_client_action_log":"https://cws.connectedpdf.com/cpdfapi/v1/client/action-log","fcp_client_request":"https://cws.connectedpdf.com/cpdfapi/v1/client/request","fcp_cloud_domain":"https://cloud.connectedpdf.com","fcp_creview_attendees":"https://cws.connectedpdf.com/personal/connected-review?docId=%s&sessionId=%s&docName=%s&access-token=%s&al=%s&cv=%s&an=%s&av=%s","fcp_cwebpdf_domain":"https://online.foxitsoftware.com/reader?from=wrapper","fcp_doc_publish_publishversion":"https://cws.connectedpdf.com/connected-pdf/publish-version?cDocID=%s&isPhantom=%s&access-token=%s&al=%s&cv=%s&an=%s&av=%s","fcp_doc_publish_upload":"https://cws.connectedpdf.com/connected-pdf/upload?access-token=%s&al=%s&cv=%s&an=%s&av=%s","fcp_doc_upload":"https://cws.connectedpdf.com/cpdfapi/v1/server/upload-file?access-token=%s","fcp_document_creivew":"https://cws.connectedpdf.com/document/creview?docId=%s&access-token=%s&sessionId=%s&al=%s&cv=%s&an=%s&av=%s","fcp_documents":"https://cws.connectedpdf.com/cpdfapi/v1/documents","fcp_documents_appe_doc_permission":"https://cws.connectedpdf.com/cpdfapi/v1/documents/appe-doc-permission?access-token=${access-token}","fcp_documents_convert_to_drm":"https://cws.connectedpdf.com/cpdfapi/v2/documents/drm/convert2CDRM?access-token=%s","fcp_documents_cpdf":"https://cws.connectedpdf.com/cpdfapi/v1/documents/cpdf?access-token=${access-token}","fcp_documents_drm":"https://cws.connectedpdf.com/cpdfapi/v1/documents/drm?access-token=${access-token}","fcp_documents_drm_acl":"https://cws.connectedpdf.com/cpdfapi/v1/documents/drm/acl?access-token=${access-token}","fcp_documents_drm_copy":"https://cws.connectedpdf.com/cpdfapi/v1/documents/drm/copy?access-token=${access-token}","fcp_documents_drm_permission":"https://cws.connectedpdf.com/cpdfapi/v1/documents/drm/permission?access-token=%s","fcp_documents_log":"https://cws.connectedpdf.com/cpdfapi/v1/documents/log","fcp_documents_query_task":"https://cws.connectedpdf.com/cpdfapi/v2/documents/queryTask?access-token=%s","fcp_documents_share_review":"https://cws.connectedpdf.com/cpdfapi/v1/documents/share-review?access-token=${access-token}","fcp_documents_share_review_annot":"https://cws.connectedpdf.com/cpdfapi/documents/share-review/annot?access-token=${access-token}","fcp_documents_share_review_annot_page":"https://cws.connectedpdf.com/cpdfapi/v1/documents/share-review/annot_page?access-token=${access-token}","fcp_documents_share_review_annotnew":"https://cws.connectedpdf.com/cpdfapi/v1/documents/share-review/annotnew?access-token=${access-token}","fcp_documents_share_review_list":"https://cws.connectedpdf.com/cpdfapi/documents/share-review/list?access-token=${access-token}","fcp_documents_share_review_list_new":"https://cws.connectedpdf.com/cpdfapi/v1/documents/share-review/listnew?access-token=${access-token}","fcp_documents_share_review_listnew":"https://cws.connectedpdf.com/cpdfapi/v1/documents/share-review/annot_list","fcp_documents_share_review_participant":"https://cws.connectedpdf.com/cpdfapi/v1/documents/share-review/participant?access-token=${access-token}","fcp_documents_version_notification":"https://cws.connectedpdf.com/cpdfapi/v1/documents/version-notification?access-token=${access-token}","fcp_documents_versions":"https://cws.connectedpdf.com/cpdfapi/v1/documents/versions?access-token=${access-token}","fcp_domain":"https://cws.connectedpdf.com","fcp_drm_add_permission":"https://cws.connectedpdf.com/cpdfapi/v1/documents/drm-add-permission?access-token=${access-token}","fcp_email_notification":"https://cws.connectedpdf.com/cpdfapi/v1/server/email-notification?access-token=%s","fcp_forget_password":"https://cws.connectedpdf.com/site/forgetpassword?al=%s&cv=%s&an=%s&av=%s","fcp_get_display_name":"https://cws.connectedpdf.com/cpdfapi/v1/server/display-name","fcp_get_last_version":"https://cws.connectedpdf.com/cpdfapi/v1/documents/not-capp-message?al=%s&cv=%s&an=%s&av=%s&","fcp_get_personal_plugin":"https://cws.connectedpdf.com/cpdfapi/v1/users/get-personal-plugin?access-token=%s","fcp_homepage_url":"https://cws.connectedpdf.com/cDocID/%s","fcp_login_plugin_url":"https://platform.foxitcloud.com/plugin_config/v8.0/en-US.json","fcp_message_center":"https://cws.connectedpdf.com/personal?access-token=%s&al=%s&cv=%s&an=%s&av=%s","fcp_message_notification":"https://cws.connectedpdf.com/message/notification?w=340&h=431&access-token=%s&al=%s&cv=%s&an=%s&av=%s","fcp_message_notification_switch":"https://cws.connectedpdf.com/message/switch-notification?w=340&h=431&al=%s&cv=%s&an=%s&av=%s","fcp_message_url":"https://cws.connectedpdf.com/message/message?mId=","fcp_messages":"https://cws.connectedpdf.com/cpdfapi/v1/messages?access-token=${access-token}","fcp_messages_open_message":"https://cws.connectedpdf.com/cpdfapi/v1/messages/open-message?docId=%s&access-token=%s","fcp_messages_open_message_not_capp":"https://cws.connectedpdf.com/cpdfapi/v1/messages/not-capp-message?al=%s&cv=%s&an=%s&av=%s&","fcp_messages_open_message_setting":"https://cws.connectedpdf.com/message/setting?docId=%s&access-token=%s","fcp_messages_polling":"https://cws.connectedpdf.com/cpdfapi/v1/messages/polling","fcp_messages_polling_config":"https://cws.connectedpdf.com/cpdfapi/v1/messages/polling/config","fcp_messages_template":"https://cws.connectedpdf.com/cpdfapi/v1/messages/template?access-token=${access-token}","fcp_messages_untreated":"https://cws.connectedpdf.com/cpdfapi/v1/messages/untreated?access-token=${access-token}","fcp_personal_message_center":"https://cws.connectedpdf.com/personal/permission-messages?tab=sent&access-token=%s","fcp_platform_domain":"https://platform.foxitcloud.com","fcp_privacy_setting":"https://cws.connectedpdf.com/welcome.html?al=%s&cv=%s&an=%s&av=%s","fcp_register_version":"https://cws.connectedpdf.com/connected-pdf/register-version?cDocID=%s&isPhantom=%s&access-token=%s&al=%s&cv=%s&an=%s&av=%s","fcp_repository":"https://cloud.connectedpdf.com/cmis/atom","fcp_request_permission":"https://cws.connectedpdf.com/permission-manage/request-permission?docId=%s&access-token=%s&permission=%s&message=%s&type=%d&notice=%s","fcp_send_ga_event":"https://cws.connectedpdf.com/cpdfapi/v1/server/send-ga-event?access-token=%s","fcp_send_gray_log":"https://cws.connectedpdf.com/cpdfapi/v1/server/send-gray-log","fcp_server_client_id":"https://cws.connectedpdf.com/cpdfapi/v1/server/client-id","fcp_server_config":"https://cws.connectedpdf.com/cpdfapi/v1/server/server-config","fcp_server_option_config":"https://cws.connectedpdf.com/cpdfapi/v1/server/option-config","fcp_server_send_email":"https://cws.connectedpdf.com/cpdfapi/v1/server/send-email","fcp_server_time":"https://cws.connectedpdf.com/cpdfapi/v1/server/time","fcp_signature":"https://cws.connectedpdf.com/connected-pdf/signature?access-token=%s&al=%s&cv=%s&an=%s&av=%s","fcp_site_cpdf_about":"https://cws.connectedpdf.com/site/cpdf-about?w=800&h=490&al=%s&cv=%s&an=%s&av=%s","fcp_site_proceed":"https://cws.connectedpdf.com/site/proceed?w=560&h=355&al=%s&cv=%s&an=%s&av=%s","fcp_site_setting":"https://cws.connectedpdf.com/site/setting?w=680&h=549&al=%s&cv=%s&an=%s&av=%s","fcp_update_plugin":"https://cws.connectedpdf.com/cpdfapi/v1/server/update-plugin","fcp_upload_sign":"https://cws.connectedpdf.com/cpdfapi/v1/server/upload-image","fcp_user_exist":"https://cws.connectedpdf.com/cpdfapi/v1/users/exists?email=%s","fcp_user_profile":"https://cws.connectedpdf.com/profile/profile-edit?access-token=%s&al=%s&cv=%s&an=%s&av=%s","fcp_user_signin_page":"https://cws.connectedpdf.com/site/plugin-sign-in","fcp_user_signout":"https://cas.connectedpdf.com/cas/logout","fcp_user_signout_new":"https://cas.foxitsoftware.com/cas/logout","fcp_users":"https://cws.connectedpdf.com/cpdfapi/v1/users","fcp_users_access_token":"https://cws.connectedpdf.com/cpdfapi/v1/users/access_token","fcp_users_device_info":"https://cws.connectedpdf.com/cpdfapi/v1/users/device-info?access-token=${access-token}","fcp_users_extend":"https://cws.connectedpdf.com/cpdfapi/v1/users/extend?access-token=${access-token}","fcp_users_new_user":"https://cws.connectedpdf.com/cpdfapi/v1/users/new-user","fcp_users_online_state":"https://cws.connectedpdf.com/cpdfapi/v1/users/online-state?access-token=${access-token}","fcp_users_password":"https://cws.connectedpdf.com/cpdfapi/v1/users/password?access-token=${access-token}","fcp_version_link":"https://cws.connectedpdf.com/connected-pdf/download-notification?cmisdoc=%s&al=%s&cv=%s&an=%s&av=%s","fcp_wrapper_set":"https://cws.connectedpdf.com/cpdfapi/v1/server/wrapper","ph_apple_sub":"https://appstore.foxitsoftware.com/api/appstore/apple-sub?access-token={token}","ph_subscribe_check_license":"https://cloud.connectedpdf.com/subscribe/check-license?","ph_subscribe_checklicense_new":"https://cloud.connectedpdf.com/subscribe/check-phantom-license","ph_subscribe_isshow_manager":"https://appstore.foxitsoftware.com/api/appstore/show-subscribe-manager?access-token={token}","ph_subscribe_manager":"https://cloud.connectedpdf.com/subscribe/subscription-manager?token={token}","ph_subscribe_renew":"https://cloud.connectedpdf.com/subscribe/start-renew?token={token}","ph_subscribe_renew_remind":"https://cloud.connectedpdf.com/subscribe/get-renew-remind?token={token}","ph_subscribe_start":"https://cloud.connectedpdf.com/subscribe/start-subscription?token={token}"},"version":2},"md5":"413ac427cf12db135a197cab486c23a9"}"
+Craete tbDnt table success
+Craete tbApi table success
+Craete tbUser table success
+Craete tbUser tbHistory2 success
+8888888888888888888
+999999999999999999
+before create app event callback
+auto login start
+before doc event
+Begin thread run:  0x7efd87fff700
+Begin thread run:  0x7efd877fe700
+Begin thread run:  0x7efd7effd700
+monitor reader open anc close
+begin Get tbApi info
+common run:  0x7efd877fe700  Count: 1
+common run:  0x7efd7effd700  Count: 2
+=====CTrackScheduleThread Thread begin.=====
+CMainToolbar::AddSecondaryToolBar:  "Ribbon_Category_CloudReading"
+toolbar config json: 0x4a2c038
+CloudReading plugin PIInit end:  QTime("04:38:12.180") 
+
+common run:  0x7efd87fff700  Count: 3
+ConnectedPDF Plugin: PIInit Begin 
+
+=====Thread begin.
+=====Thread end.
+common run:  0x7efd87fff700  Running: true
+********************************************************
+retuslt ==  "https://ad.foxitsoftware.com/adserve.php"
+Begin HttpCmdReceive::getResult  60000  Threadid: 0x7efd877fe700
+Begin HttpCmdReceive::getResult  60000  Threadid: 0x7efd7effd700
+CFC_InitFpcsdkThread Create
+ConnectedPDF Plugin: PIInit End 
+
+ConnectedPDF Plugin: CheckInitFcpsdkDll------Success
+test
+test
+connectpdfservice PIInit begin
+connectpdfservice PIInit end
+**************add cpdfad*******************************
+CFRMSPlg PIInit() 
+
+ConnectPDFService: FCP_InitDLL Success
+QObject: Cannot create children for a parent that is in a different thread.
+(Parent is CInternetMgr(0x7efd95e6dae0), parent's thread is QThread(0x3bc6e90), current thread is CFC_InitFpcsdkThread(0x4017b20)
+QObject::connect: Cannot queue arguments of type 'QString&'
+(Make sure 'QString&' is registered using qRegisterMetaType().)
+title:  "Foxit Reader"
+pActiveMessage:  "Sales and Information: sales@foxitsoftware.com"
+pButtonActivate:  "Activate"
+pButtonOK:  "Buy"
+pCheckTitle:  "Continue Free Trial"
+pLink:  "+1-866-680-3668 (24/7)"
+pTrialMessage:  "Thank you for using the RMS Plug-in for Foxit Reader. A license is required to use this plug-in. If you have a license, please activate now. Foxit offers a free 14-day trial. You can click on the "Continue Free Trial" to start the trial today.
+
+To purchase the plugin,please contact us at:"
+title:  "Foxit Reader"
+pActiveMessage:  "Sales and Information: sales@foxitsoftware.com"
+pButtonActivate:  "Activate"
+pButtonOK:  "Buy"
+pCheckTitle:  "Continue Free Trial"
+pLink:  "+1-866-680-3668 (24/7)"
+pTrialMessage:  "Thank you for using the RMS Plug-in for Foxit Reader. A license is required to use this plug-in. If you have a license, please activate now. Foxit offers a free 14-day trial. You can click on the "Continue Free Trial" to start the trial today.
+
+To purchase the plugin,please contact us at:"
+QObject::connect: No such slot CFUIAction::OnClickRestrictedAccessOrSettingMenu()
+QObject::connect: No such slot CFUIAction::OnClickRestrictedAccessOrSettingMenu()
+QObject::connect: No such slot CFUIAction::OnClickRestrictedAccessOrSettingMenu()
+QObject::connect: No such slot CFUIAction::OnClickProtectOrRestrictedAccessMenu()
+UpdateAPp PIInit() 
+
+date: 2458800  -  2458794  =  6 
+
+plugin date: 2458800  -  2458799  =  1 
+
+[TimeStamp]-----CReader_AppEx::LoadPlugs()-----end-----UsedTime: 42ms 
+g_GlobalDataMgr.m_PermanentData.m_bCheckRegister= 1
+xdg-mime return the value that is  "FoxitReader.desktop
+"
+ca.QueryDefaultReader= 1
+xdg-mime return the value that is  "FoxitReader.desktop
+"
+[TimeStamp]-----CMainWindow::Init()-----end-----UsedTime: 56ms 
+ position.x =   346
+ position.y =   19
+[TimeStamp]-----CReader_AppEx::InitInstance()-----end-----UsedTime: 130ms 
+[TimeStamp]-----CMainWindow::OpenFile-----begin
+Openfile()---fileName-: "/home/daniar/Project/NS2-BenZhao/graph-7/eps/tes-eps-converted-to.pdf"
+ConnectedPDF Plugin: FRDocWillOpen Begin 
+
+ConnectedPDF Plugin: FRDocWillOpen End 
+
+End HttpCmdReceive::getResult  60000  Threadid: 0x7efd7effd700
+delete enable =  false
+dd enable =  true
+ConnectedPDF Plugin: FRDocDidOpen Begin 
+
+ConnectedPDF Plugin: FRDocDidOpen End 
+
+ActivateTab--index= 0  m_nlastIndex= 0
+delete enable =  false
+dd enable =  false
+labtitle---font: QFont( "Ubuntu,-1,16,5,50,0,0,0,0,0" )
+ActivateTab--index= 1  m_nlastIndex= 0
+delete enable =  false
+dd enable =  true
+CReader_PanelMgrEx::AddPanelButton:  "Bookmarks"
+CReader_PanelMgrEx::AddPanelButton:  "Pages"
+CReader_PanelMgrEx::AddPanelButton:  "Attachments"
+CReader_PanelMgrEx::AddPanelButton:  "Comments"
+bookmarkpanel---cmtreectrl---font: QFont( "Ubuntu,-1,14,5,50,0,0,0,0,0" )
+[TimeStamp]-----CMainWindow::OpenFile-----end-----UsedTime: 271ms 
+[TimeStamp]-----main-----end-----UsedTime: 272ms 
+OnSlotAutoLogin was called
+OnSlotAutoLogin current thread:  QThread(0x3bc6e90)
+CSigninDlg::AutoLogin() begin
+AutoLogin current thread:  QThread(0x3bc6e90)
+CSigninDlg::AutoLogin() end:  0
+auto login finished
+10000000000000
+
+BuildupJSPlugin--csPluginPathName= "https://1757173384.rsc.cdn77.org/js_plugins/cDrm/manifest.json"
+ConnectedPDF Plugin: GetLocalcAppID------Start
+End HttpCmdReceive::getResult  60000  Threadid: 0x7efd877fe700
+header status code is : 200
+common run:  0x7efd877fe700  Running: true
+ConnectedPDF Plugin: GetcAppIDFromLocal---Success--- "697B491E8332395CC521FF5B638C98EC"
+set tbAD info failed "no such table: tbAd Unable to execute statement"
+common run:  0x7efd7effd700  Running: true
+LoadJSPlugin--csName= "cDRM"
+LoadJSPlugin--m_wsPluginURL= "https://1757173384.rsc.cdn77.org/js_plugins/cDrm/manifest.json"
+LoadJSPlugin--m_wsPlatformBaseURL= "https://1757173384.rsc.cdn77.org/js_plugins/basePlugin.js"
+LoadJSPlugin--m_wsPanelUrl= "./cDrm/web/index.html?v=07221600,master-b43b547"
+LoadJSPlugin--m_dwLoadingFlags= 4
+libpng warning: Unknown iTXt compression type or method
+CJS_PanelToolHandler::AddPanelInfo--nSize= 0  panelInfo: "cDRM"
+CNavPanelDlg::OnInitDialog()__nSize: 1
+CNavPanelDlg::OnInitDialog()__listwidget_AddItem: "Protect Document"
+CReader_PanelMgrEx::AddPanelButton:  "ConnectedPDF"
+CReader_AppEx::AddNavigationPanel__NewAdd: pReaderDoc: 0x4b301e0
+CReader_AppEx::AddNavigationPanel__NewAdd: PanelName: "ConnectedPDF"
+CJS_Object::GetBitmapFromPath: null
+LoadJSPlugintest:  "cDRM"
+ CJS_Module::ExitEnumJSPlugThread()
+~EnumJSPluginThread()
+Has delive node,commit it to db
+AddDntData table inserted!
