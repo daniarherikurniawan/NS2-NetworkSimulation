@@ -144,8 +144,131 @@ Part 2:
 	TCP variants (Reno, NewReno, and Vegas)
 		under the influence of two different queuing disciplines (DropTail and RED).
 
+	1. 
+		Use the same topology from Part1 
+			and have one TCP flow (N1-N4) and one CBR/UDP (N5-N6) flow. 
+
+		First, start the TCP flow. Once the TCP flow is steady, 
+			start the CBR source 
+
+	ns part2_a.tcl DropTail Reno TCPSink
+	ns part2_a.tcl DropTail Sack1 TCPSink/Sack1
+	ns part2_a.tcl RED Reno TCPSink
+	ns part2_a.tcl RED Sack1 TCPSink/Sack1
+
+	TCP/Reno
+		Agent/TCPSink
+
+	TCP/Sack1
+		TCPSink/Sack1
+
+		and analyze how the TCP and CBR flows 
+			under these queuing algorithms: DropTail and RED. 
+			
+			study the influence of the queuing discipline used at the node on the overall throughput.
+
+			each TCP variant
+				packet-loss rate??
+				avg bw rate??
+
+
+		Perform the experiments with TCP Reno and SACK. 
+
+	Parse the trace to get packet_id send by sender
+		separate the ack recceived on another file
+
+		then plot the packet_id+ack vs time
+
+dir_name=output_part_2
+traces_name="DropTail-Reno"
+dataplot_name="dataplot-"$traces_name".dat"
+awk '{if ($1=="+" && $5==0 && $9=="tcp") {count += 1; printf("\n"$0) } } END { printf ("%d \t", count )}' $dir_name/traces_a/$traces_name.nam >> $dir_name/$dataplot_name
+
+
+dir_name=output_part_2
+traces_name="DropTail-Reno"
+dataplot_name="dataplot-"$traces_name".dat"
+awk '{if ($1=="+" && $5==0 && $9=="tcp") {count += 1; printf(count"\t"$3"\t"$11"\t"$15"\n") } } END {}' $dir_name/traces_a/$traces_name.nam > $dir_name/"dataplot-"$traces_name"-sent.dat"
+awk '{if ($1=="r" && $7==0 && $9=="ack") {count += 1; printf(count"\t"$3"\t"$11"\t"$15"\n") } } END {}' $dir_name/traces_a/$traces_name.nam > $dir_name/"dataplot-"$traces_name"-ack.dat"
+awk '{if ($1=="d" && $9=="tcp" && $17==1) {count += 1; printf(count"\t"$3"\t"$11"\t"$15"\n") } } END {}' $dir_name/traces_a/$traces_name.nam > $dir_name/"dataplot-"$traces_name"-drop.dat"
+
+
+The goodput of a TCP connection is, properly, the number of application bytes received. This differs from the throughput – the total bytes sent – in two ways: the latter includes both packet headers and retransmitted packets. The ack0 value above includes no retransmissions; we will occasionally refer to it as “goodput” in this sense.
+
+So, throughput includes both packet headers and retransmitted packets. 
+
+
+
+
+
+throughput
+
+	Only consider the delivered/received packet!
+
+	This drop in throughput is due to the sliding window protocols used for acknowledgment of received packets. In certain variants of TCP, if a transmitted packet is lost, it will be re-sent along with every packet that had been sent after it. This retransmission causes the overall throughput of the connection to drop.
+
+	Throughput is defined as the quantity of data being sent/received by unit of time
+
+	Mbps 
+		can change per second 
+	Maybe should plot the graph like in goodputratio
+		16.3.4.2   Two-sender phase effects
+		16.3.10   Raising the Bandwidth
+			http://intronetworks.cs.luc.edu/current/html/ns2.html#equal-delays
+
+		checkout
+			Packet number vs time
+				Figure 4: Simulations with three dropped packets.
+	
+			http://people.cs.uchicago.edu/~ravenben/classes/333/tcp-sim.pdf
+
+
+
+
+
+Other queue objects derived from the base class Queue are drop-tail, FQ, SFQ, DRR, RED and CBQ queue objects. Each are
+
+
+The one-way TCP sending agents currently supported are:
+
+• Agent/TCP - a “tahoe” TCP sender
+• Agent/TCP/Reno - a “Reno” TCP sender
+• Agent/TCP/Newreno - Reno with a modification
+• Agent/TCP/Sack1 - TCP with selective repeat (follows RFC2018)
+• Agent/TCP/Vegas - TCP Vegas
+• Agent/TCP/Fack - Reno TCP with “forward acknowledgment”
+• Agent/TCP/Linux - a TCP sender with SACK support that runs TCP congestion control modules from Linux kernel
+
+The one-way TCP receiving agents currently supported are:
+
+• Agent/TCPSink - TCP sink with one ACK per packet
+• Agent/TCPSink/DelAck - TCP sink with configurable delay per ACK
+• Agent/TCPSink/Sack1 - selective ACK sink (follows RFC2018)
+• 
+
+
+		Answer the following questions for Reno and for SACK:
+Simulate the following scenario under two queuing algorithms: One TCP flow (test with Reno and SACK) sending 1000 bytes packets, and one UDP flow sending 500 bytes packets at a rate of 1 Mbps. The middle link they are sharing is a 1.5Mbps link. How do results change? Why?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Agent classes:
+
 	TCP a “Tahoe” TCP sender (cwnd = 1 on any loss)
 	TCP/Reno a “Reno” TCP sender (with fast recovery)
 	TCP/Newreno a modified Reno TCP sender 
