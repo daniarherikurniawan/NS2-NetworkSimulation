@@ -179,18 +179,50 @@ Part 2:
 
 		then plot the packet_id+ack vs time
 
-dir_name=output_part_2
-traces_name="DropTail-Reno"
-dataplot_name="dataplot-"$traces_name".dat"
-awk '{if ($1=="+" && $5==0 && $9=="tcp") {count += 1; printf("\n"$0) } } END { printf ("%d \t", count )}' $dir_name/traces_a/$traces_name.nam >> $dir_name/$dataplot_name
+		dir_name=output_part_2
+		traces_name="DropTail-Reno"
+		dataplot_name="dataplot-"$traces_name".dat"
+		awk '{if ($1=="+" && $5==0 && $9=="tcp") {count += 1; printf("\n"$0) } } END { printf ("%d \t", count )}' $dir_name/traces_a/$traces_name.nam >> $dir_name/$dataplot_name
 
 
-dir_name=output_part_2
-traces_name="DropTail-Reno"
-dataplot_name="dataplot-"$traces_name".dat"
-awk '{if ($1=="+" && $5==0 && $9=="tcp") {count += 1; printf(count"\t"$3"\t"$11"\t"$15"\n") } } END {}' $dir_name/traces_a/$traces_name.nam > $dir_name/"dataplot-"$traces_name"-sent.dat"
-awk '{if ($1=="r" && $7==0 && $9=="ack") {count += 1; printf(count"\t"$3"\t"$11"\t"$15"\n") } } END {}' $dir_name/traces_a/$traces_name.nam > $dir_name/"dataplot-"$traces_name"-ack.dat"
-awk '{if ($1=="d" && $9=="tcp" && $17==1) {count += 1; printf(count"\t"$3"\t"$11"\t"$15"\n") } } END {}' $dir_name/traces_a/$traces_name.nam > $dir_name/"dataplot-"$traces_name"-drop.dat"
+		dir_name=output_part_2
+		traces_name="DropTail-Reno"
+		dataplot_name="dataplot-"$traces_name".dat"
+		awk '{if ($1=="+" && $5==0 && $9=="tcp") {count += 1; printf(count"\t"$3"\t"$11"\t"$15"\n") } } END {}' $dir_name/traces_a/$traces_name.nam > $dir_name/"dataplot-"$traces_name"-sent.dat"
+		awk '{if ($1=="r" && $7==0 && $9=="ack") {count += 1; printf(count"\t"$3"\t"$11"\t"$15"\n") } } END {}' $dir_name/traces_a/$traces_name.nam > $dir_name/"dataplot-"$traces_name"-ack.dat"
+		awk '{if ($1=="d" && $9=="tcp" && $17==1) {count += 1; printf(count"\t"$3"\t"$11"\t"$15"\n") } } END {}' $dir_name/traces_a/$traces_name.nam > $dir_name/"dataplot-"$traces_name"-drop.dat"
+
+	2. 
+		Plot the throughput of all three flows.
+
+		Measure avg packet latency (end-to-end delay) 
+			for the packets for different flows
+			 	plot it. 
+
+			 		get the sent, ack, dropped
+			 			remove the dropped_id in sent
+			 		match the success sent with ack 
+
+			How does it differ between DropTail and RED?
+
+
+
+
+		dropped packet id should be relevant to the seq 
+			should create a file that map the seq and real id 
+
+
+
+
+
+paste file1.txt file2.txt | awk '{print $1,$2,$3,$6}' > file3
+
+paste $dir_name/"dataplot_a/dataplot-"$traces_name"-TCP-sent-acked.dat" $dir_name/"dataplot_a/dataplot-"$traces_name"-TCP-ack-tmp.dat" | awk '{print $1,$5,$6,$7}' > $dir_name/"dataplot_a/dataplot-"$traces_name"-TCP-ack.dat"
+
+
+
+
+
 
 
 The goodput of a TCP connection is, properly, the number of application bytes received. This differs from the throughput – the total bytes sent – in two ways: the latter includes both packet headers and retransmitted packets. The ack0 value above includes no retransmissions; we will occasionally refer to it as “goodput” in this sense.
@@ -225,26 +257,37 @@ throughput
 
 
 
+Orientation:
+
+	• up
+	• down
+	• right
+	• left
+	• up-right
+	• down-right
+	• up-left
+	• down-left
+	• angle between 0 and 2pi
+
 
 Other queue objects derived from the base class Queue are drop-tail, FQ, SFQ, DRR, RED and CBQ queue objects. Each are
 
 
 The one-way TCP sending agents currently supported are:
 
-• Agent/TCP - a “tahoe” TCP sender
-• Agent/TCP/Reno - a “Reno” TCP sender
-• Agent/TCP/Newreno - Reno with a modification
-• Agent/TCP/Sack1 - TCP with selective repeat (follows RFC2018)
-• Agent/TCP/Vegas - TCP Vegas
-• Agent/TCP/Fack - Reno TCP with “forward acknowledgment”
-• Agent/TCP/Linux - a TCP sender with SACK support that runs TCP congestion control modules from Linux kernel
+	• Agent/TCP - a “tahoe” TCP sender
+	• Agent/TCP/Reno - a “Reno” TCP sender
+	• Agent/TCP/Newreno - Reno with a modification
+	• Agent/TCP/Sack1 - TCP with selective repeat (follows RFC2018)
+	• Agent/TCP/Vegas - TCP Vegas
+	• Agent/TCP/Fack - Reno TCP with “forward acknowledgment”
+	• Agent/TCP/Linux - a TCP sender with SACK support that runs TCP congestion control modules from Linux kernel
 
-The one-way TCP receiving agents currently supported are:
+	The one-way TCP receiving agents currently supported are:
 
-• Agent/TCPSink - TCP sink with one ACK per packet
-• Agent/TCPSink/DelAck - TCP sink with configurable delay per ACK
-• Agent/TCPSink/Sack1 - selective ACK sink (follows RFC2018)
-• 
+	• Agent/TCPSink - TCP sink with one ACK per packet
+	• Agent/TCPSink/DelAck - TCP sink with configurable delay per ACK
+	• Agent/TCPSink/Sack1 - selective ACK sink (follows RFC2018)
 
 
 		Answer the following questions for Reno and for SACK:
