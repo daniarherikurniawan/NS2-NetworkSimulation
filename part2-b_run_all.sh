@@ -31,18 +31,18 @@ dir_name=output_part_2
 
 # drawing a graph using gnuplot
 
-	# echo -e "\nPlotting Throughput (packet number vs time)"
+	echo -e "\nPlotting Throughput (packet number vs time)"
 
-	# gnuplot -e "queuing_algo_='DropTail'; type_='UDP_1' " part2-b_plot_throughput.plt 
-	# gnuplot -e "queuing_algo_='DropTail'; type_='UDP_2' " part2-b_plot_throughput.plt 
-	# gnuplot -e "queuing_algo_='DropTail'; type_='UDP_3' " part2-b_plot_throughput.plt 
-	# gnuplot -e "queuing_algo_='RED'; type_='UDP_1' " part2-b_plot_throughput.plt 
-	# gnuplot -e "queuing_algo_='RED'; type_='UDP_2' " part2-b_plot_throughput.plt 
-	# gnuplot -e "queuing_algo_='RED'; type_='UDP_3' " part2-b_plot_throughput.plt 
+	gnuplot -e "queuing_algo_='DropTail'; type_='UDP_1' " part2-b_plot_throughput.plt 
+	gnuplot -e "queuing_algo_='DropTail'; type_='UDP_2' " part2-b_plot_throughput.plt 
+	gnuplot -e "queuing_algo_='DropTail'; type_='UDP_3' " part2-b_plot_throughput.plt 
+	gnuplot -e "queuing_algo_='RED'; type_='UDP_1' " part2-b_plot_throughput.plt 
+	gnuplot -e "queuing_algo_='RED'; type_='UDP_2' " part2-b_plot_throughput.plt 
+	gnuplot -e "queuing_algo_='RED'; type_='UDP_3' " part2-b_plot_throughput.plt 
 
-	# echo -e "\nPlotting latency for each UDP link"
-	# gnuplot -e "queuing_algo_='DropTail' " part2-b_plot_latency.plt 
-	# gnuplot -e "queuing_algo_='RED' " part2-b_plot_latency.plt 
+	echo -e "\nPlotting latency for each UDP link"
+	gnuplot -e "queuing_algo_='DropTail' " part2-b_plot_latency.plt 
+	gnuplot -e "queuing_algo_='RED' " part2-b_plot_latency.plt 
 
 	echo -e "\nPlotting average latency for each queue algorithm"
 	gnuplot part2-b_plot_avg_latency.plt 

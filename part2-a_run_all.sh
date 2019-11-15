@@ -16,18 +16,18 @@ dir_name=output_part_2
 	# echo -e "Done generating the traces!\n"
 
 # Analyze the traces using AWK
-	rm -rf $dir_name/dataplot_a
-	mkdir $dir_name/dataplot_a
+	# rm -rf $dir_name/dataplot_a
+	# mkdir $dir_name/dataplot_a
 
-	echo -e "Analyzing DropTail-Reno traces!"
-	./part2-a_analyze.sh DropTail-Reno
-	echo -e "Analyzing DropTail-Sack1 traces!"
-	./part2-a_analyze.sh DropTail-Sack1
-	echo -e "Analyzing RED-Reno traces!"
-	./part2-a_analyze.sh RED-Reno
-	echo -e "Analyzing RED-Sack1 traces!"
-	./part2-a_analyze.sh RED-Sack1
-	echo -e "Done generating the dataplot!\n"
+	# echo -e "Analyzing DropTail-Reno traces!"
+	# ./part2-a_analyze.sh DropTail-Reno
+	# echo -e "Analyzing DropTail-Sack1 traces!"
+	# ./part2-a_analyze.sh DropTail-Sack1
+	# echo -e "Analyzing RED-Reno traces!"
+	# ./part2-a_analyze.sh RED-Reno
+	# echo -e "Analyzing RED-Sack1 traces!"
+	# ./part2-a_analyze.sh RED-Sack1
+	# echo -e "Done generating the dataplot!\n"
 
 # drawing a graph using gnuplot
 
