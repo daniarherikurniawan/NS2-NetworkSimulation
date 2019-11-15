@@ -16,7 +16,7 @@ set size 0.8, 0.8
 set key top left
 
 set terminal pdf
-set output "output_part_2/graph-a_throughput-".variant_."-".type_.".pdf"
+set output "output_part_2/graph-a_throughput-".queuing_algo_."-".variant_."-".type_.".pdf"
 
 plot \
 'output_part_2/dataplot_a/dataplot-'.queuing_algo_.'-'.variant_.'-'.type_.'-sent.dat' u 2:1  title 'sent' ls 7 ps 0.1 lc  rgb 'black', \
