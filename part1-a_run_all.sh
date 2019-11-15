@@ -26,25 +26,22 @@ dir_name=output_part_1
 	# echo -e "Done: Newreno vs Vegas\n"
 
 # drawing a graph using gnuplot
-	# echo -e "\nPlotting Avg Packet Loss"
-	# gnuplot -e "variant_1='Reno'; variant_2='Reno'" part1-a_plot_packet_loss.plt 
-	# gnuplot -e "variant_1='Newreno'; variant_2='Reno'" part1-a_plot_packet_loss.plt 
-	# gnuplot -e "variant_1='Newreno'; variant_2='Vegas'"  part1-a_plot_packet_loss.plt 
-	# gnuplot -e "variant_1='Vegas'; variant_2='Vegas'" part1-a_plot_packet_loss.plt 
-	# echo -e "Output at: $dir_name/"
-	# echo -e "Done\n"
+	echo -e "\nPlotting Avg Packet Loss"
+	gnuplot -e "variant_1='Reno'; variant_2='Reno'" part1-a_plot_packet_loss.plt 
+	gnuplot -e "variant_1='Newreno'; variant_2='Reno'" part1-a_plot_packet_loss.plt 
+	gnuplot -e "variant_1='Newreno'; variant_2='Vegas'"  part1-a_plot_packet_loss.plt 
+	gnuplot -e "variant_1='Vegas'; variant_2='Vegas'" part1-a_plot_packet_loss.plt 
+	echo -e "Output at: $dir_name/"
+	echo -e "Done\n"
 
-	# echo -e "\nPlotting Avg Bandwidth Usage"
-	# gnuplot -e "variant_1='Reno'; variant_2='Reno'" part1-a_plot_avg_bw.plt 
-	# gnuplot -e "variant_1='Newreno'; variant_2='Reno'" part1-a_plot_avg_bw.plt 
-	# gnuplot -e "variant_1='Newreno'; variant_2='Vegas'" part1-a_plot_avg_bw.plt 
-	# gnuplot -e "variant_1='Vegas'; variant_2='Vegas'" part1-a_plot_avg_bw.plt 
-	# echo -e "Output at: $dir_name/"
+	echo -e "\nPlotting Avg Bandwidth Usage"
+	gnuplot -e "variant_1='Reno'; variant_2='Reno'" part1-a_plot_avg_bw.plt 
+	gnuplot -e "variant_1='Newreno'; variant_2='Reno'" part1-a_plot_avg_bw.plt 
+	gnuplot -e "variant_1='Newreno'; variant_2='Vegas'" part1-a_plot_avg_bw.plt 
+	gnuplot -e "variant_1='Vegas'; variant_2='Vegas'" part1-a_plot_avg_bw.plt 
+	echo -e "Output at: $dir_name/"
 
 	gnuplot part1-a_plot_packet_loss_all.plt 
 	gnuplot part1-a_plot_avg_bw_all.plt 
 	
 	echo -e "Done\n"
-	# gnuplot part1-a_plot_avg_bw.plt 
-	# pdf $dir_name/graph-a_avg_bw.pdf 
-	# echo -e "Done\n"

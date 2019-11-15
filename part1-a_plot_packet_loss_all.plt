@@ -8,7 +8,7 @@ set xrange [3:13]
 
 set key samplen 4
 
-set size 1, 1
+set size 0.8, 0.8
 
 #set xtic 0.5
 #set ytics ("0" 0.0, ".2" 0.2, ".4" 0.4, ".6" 0.6, ".8" 0.8, "1" 1.0)
